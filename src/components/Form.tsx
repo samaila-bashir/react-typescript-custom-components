@@ -18,7 +18,7 @@ const Form = forwardRef<FormHandle, FormProps>(
   ({ onSave, children, ...otherProps }, ref) => {
     const form = useRef<HTMLFormElement>(null);
 
-    // useImperativeHandle: used for exposing a function to a parent component
+    // useImperativeHandle: used for exposing a component API to a parent component
     useImperativeHandle(ref, () => {
       return {
         clear() {

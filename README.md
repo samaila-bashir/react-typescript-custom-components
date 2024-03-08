@@ -1,6 +1,58 @@
-# Getting Started with Create React App
+# React Custom Components with TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This README outlines the custom components I've developed in a personal React project, leveraging TypeScript to enhance flexibility, type safety, and usability.
+
+## Building a More Dynamic & Flexible Component
+
+I started by creating a more dynamic and flexible component using TypeScript's type system to handle different props combinations and variations in component behavior.
+
+## Flexible Components With Required Prop Combinations
+
+Next, I ensured that the components accept required prop combinations to enforce better usage patterns and prevent runtime errors.
+
+## Building Components with Discriminated Unions
+
+I utilized discriminated unions in TypeScript to build components that can switch behavior based on specific prop values, enhancing component versatility.
+
+## Building a Basic Wrapper Component
+
+I demonstrated building a basic wrapper component to encapsulate common UI patterns and simplify component composition.
+
+## Building Better Wrapper Components with ComponentPropsWithoutRef
+
+By leveraging `ComponentPropsWithoutRef`, I enhanced wrapper components to accept additional props while preserving type safety.
+
+## Building a Wrapper Component That Renders Different Elements
+
+I explored creating wrapper components capable of rendering different underlying elements based on provided props, improving component reusability.
+
+## Working with Type Predicates & Facing TypeScript Limitations
+
+I utilized type predicates to refine types and handle complex scenarios where TypeScript's static analysis may encounter limitations.
+
+## Building a Basic Polymorphic Component
+
+I introduced the concept of polymorphic components and demonstrated how to create them using TypeScript for enhanced flexibility.
+
+## Building a Better Polymorphic Component with Generics
+
+I advanced the polymorphic component by leveraging TypeScript generics to provide even more flexibility and type safety.
+
+## Using forwardRef with TypeScript
+
+I explored using `forwardRef` in conjunction with TypeScript to create components that support ref forwarding, enabling more advanced usage scenarios.
+
+## Building Another Wrapper Component (Custom Form Component)
+
+I extended the wrapper component concept to create a custom form component, showcasing how to encapsulate complex form logic in a reusable manner.
+
+## Sharing Logic with "unknown" & Type Casting
+
+I discussed sharing logic between components using the `unknown` type and type casting techniques, ensuring type safety while maintaining flexibility.
+
+## Exposing Component APIs with useImperativeHandle (with TypeScript)
+
+Finally, I demonstrated exposing component APIs using `useImperativeHandle` and TypeScript to provide a clear and type-safe interface for interacting with components programmatically.
 
 ## Available Scripts
 
@@ -8,39 +60,5 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+This script runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
