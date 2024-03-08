@@ -1,15 +1,13 @@
+import { useRef } from 'react';
 import './App.css';
-import Button from './components/Button';
-// import Input from './components/Input';
+import Input from './components/Input';
 
 function App() {
+  const input = useRef<HTMLInputElement>(null);
+
   return (
     <main>
-      {/* <Input id="name" label="Name" />
-      <Input id="age" label="Age" type="number" /> */}
-
-      <Button>Button 1</Button>
-      <Button>Link 1</Button>
+      <Input id="name" label="Name" ref={input} />
     </main>
   );
 }
